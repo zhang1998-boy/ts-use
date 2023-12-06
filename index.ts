@@ -1,9 +1,11 @@
+import { log } from "console"
+
 /*
  * @Author: YK1669860124rKjQY 215683509@q
  * @Date: 2023-07-24 17:22:35
- * @LastEditors: YK1669860124rKjQY 215683509@q
- * @LastEditTime: 2023-11-22 17:13:01
- * @FilePath: /TS/index.ts
+ * @LastEditors: your name
+ * @LastEditTime: 2023-12-06 21:51:21
+ * @FilePath: \ts-use\index.ts
  * @Description: 
  * 
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
@@ -69,3 +71,20 @@ interface Fn {
 const he: Fn = function (name: string) {
   return ['1']
 }
+
+//  联合类型 a|b 既可以是a也可以是b   c&d  既包括a也包括d（类似于 extends）  
+let a_1 :number | string =12323
+
+interface c_1 {
+  name:string,
+  age:number
+}
+interface d_1 {
+  sex:string
+}
+
+const  getUserInfo = (info :c_1&d_1):void=>{
+console.log( info);
+}
+getUserInfo({name:'1',age:1,sex:'man'})
+// 类型断言  交叉类

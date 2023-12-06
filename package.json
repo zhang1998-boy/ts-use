@@ -1,0 +1,24 @@
+{
+  "name": "ts-use",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.10.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhang1998-boy/ts-use.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhang1998-boy/ts-use/issues"
+  },
+  "homepage": "https://github.com/zhang1998-boy/ts-use#readme"
+}
