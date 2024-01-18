@@ -1,3 +1,4 @@
+// 压缩图片类
 class CompressImg {
     constructor(options) {
         this.fileReader = new FileReader(); //文件构造器

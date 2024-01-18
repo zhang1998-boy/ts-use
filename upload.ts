@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2024-01-18 20:12:07
- * @LastEditTime: 2024-01-18 21:26:41
+ * @LastEditTime: 2024-01-18 21:35:32
  * @LastEditors: your name
  * @Description: 前端文件压缩  1 拿去文件 2转成base64(fileReader.readAsDataURL)  3 获取宽高 4 通过canvers 调整照片质量
  * @FilePath: \ts\ts-use\upload.ts
@@ -12,7 +12,7 @@ interface Options {
   querty?: number,// 0.1-1
   success?: (base64: string) => void
 }
-
+// 压缩图片类
 class CompressImg {
   options: Options
   fileReader = new FileReader()  //文件构造器
@@ -46,11 +46,9 @@ class CompressImg {
 
 }
 
-
 const file = document.querySelector("#bntIMg") as HTMLInputElement
 
 file.addEventListener("change", (e) => {
-
   const traget = e.target as HTMLInputElement
   const fileObj = traget.files?.[0]
   if (fileObj) {
